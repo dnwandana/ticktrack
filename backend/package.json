@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "node --watch src/index.js",
     "start": "node src/index.js",
-    "migrate": "knex migrate:latest"
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run"
   },
   "dependencies": {
     "argon2": "^0.41.1",
