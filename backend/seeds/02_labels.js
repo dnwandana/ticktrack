@@ -8,48 +8,52 @@ export const seed = async (knex) => {
   await knex("labels").insert([
     {
       name: "bug",
-      description: "Something isn't working",
-      color: "#ffad99",
+      description:
+        "A problem causing incorrect behavior or errors in the system.",
+      color: "#d32f2f",
     },
     {
       name: "documentation",
-      description: "Improvements or additions to documentation",
-      color: "#99ffad",
+      description:
+        "Changes, improvements, or additions to project documentation.",
+      color: "#43a047",
     },
     {
       name: "duplicate",
-      description: "This issue or pull request already exists",
-      color: "#99adff",
+      description: "This issue or pull request already exists.",
+      color: "#5c6bc0",
     },
     {
       name: "enhancement",
-      description: "New feature or request",
-      color: "#f9e79f",
+      description: "A request for improving or adding new functionality.",
+      color: "#f39c12",
     },
     {
       name: "good first issue",
-      description: "Good for newcomers",
-      color: "#d7bde2",
+      description: "A simple issue suitable for newcomers.",
+      color: "#ba68c8",
     },
     {
       name: "help wanted",
-      description: "Extra attention is needed",
-      color: "#f5b7b1",
+      description: "This issue requires additional input or assistance.",
+      color: "#ff7043",
     },
     {
       name: "invalid",
-      description: "This doesn't seem right",
-      color: "#abecc6",
+      description:
+        "This issue is incorrect, unclear, or does not meet requirements.",
+      color: "#f57c00",
     },
     {
       name: "question",
-      description: "Further information is requested",
-      color: "#a9cce3",
+      description: "A request for more information or clarification.",
+      color: "#1976d2",
     },
     {
       name: "wontfix",
-      description: "This will not be worked on",
-      color: "#a2d9ce",
+      description:
+        "This issue will not be addressed due to scope or feasibility.",
+      color: "#78909c",
     },
   ]);
 };
